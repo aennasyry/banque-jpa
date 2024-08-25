@@ -6,6 +6,8 @@ import java.util.Set;
 
 
 @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "TYPE")
 @Table(name = "compte")
 public class Compte {
 

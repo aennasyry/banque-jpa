@@ -77,6 +77,22 @@ public class Client {
         this.adresse = adresse;
     }
 
+    public Banque getBanque() {
+        return banque;
+    }
+
+    public void setBanque(Banque banque) {
+        this.banque = banque;
+    }
+
+    public Set<Compte> getComptes() {
+        return comptes;
+    }
+
+    public void setComptes(Set<Compte> comptes) {
+        this.comptes = comptes;
+    }
+
     @Override
     public String toString() {
         return "Client{" +
@@ -85,4 +101,6 @@ public class Client {
                 ", prenom='" + prenom + '\'' +
                 '}';
     }
+
+
 }
